@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--------------------------- navagation--------------------------- -->
+    <nav>
+        <div class="logo">
+            <a href="">Logo</a>
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Joiu us</a></li>
+        </ul>
+        <div class="toggle-container">
+            <label class="switch">
+              <input type="checkbox" id="toggle">
+              <span class="slider round"></span>
+            </label>
+          </div>
+    </nav>
+    <!-- end -->
+
+    <!---------------------------- Main Part ----------------------------->
+
+    <section class="main">
+        <div class="first-part">
+            <p>SIMPLE WAY TO COMMUINCE ATE</p>
+            <h1>Action for<br>Accrssibility<br>in Design </h1>
+            <p class="p">the fastest way to build and deploy website with rususanble components</p>
+            <div>
+                <button>GET STARTED</button>
+                <a href="">Get live demo</a>
+            </div>
+                <input type="checkbox">
+                <label for="">No credit requitrd</label>
+                <input type="checkbox">
+                <label for="">No software to install</label>
+        </div>
+
+        <div class="second-part">
+            <img src="images/hero-image-simple-homepage.png" alt="">
+        </div>
+
+    </section>
+   
+
+
+    <script>
+        const toggleSwitch = document.getElementById('toggle');
+        let taq = document.getElementsByTagName('a');
+
+        toggleSwitch.addEventListener('change', function() {
+        if(this.checked) {
+            document.body.classList.add('dark-mode');
+            taq.style.color = 'white';
+
+        } else {
+            document.body.classList.remove('dark-mode');
+            
+        }
+});
+    </script>
+</body>
+</html>
